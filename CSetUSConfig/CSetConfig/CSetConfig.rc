@@ -1,0 +1,219 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(简体，中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\CSetConfig.rc2""  // 非 Microsoft Visual C++ 编辑的资源\r\n"
+    "#include ""l.CHS\\afxres.rc""      // 标准组件\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "CompanyName", "TODO: <公司名>"
+            VALUE "FileDescription", "TODO: <文件说明>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "CSetConfig.dll"
+            VALUE "LegalCopyright", "TODO: (C) <公司名>。保留所有权利。"
+            VALUE "OriginalFilename", "CSetConfig.dll"
+            VALUE "ProductName", "TODO: <产品名>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG_SetConfig DIALOGEX 0, 0, 317, 309
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,243,279,50,14
+    LTEXT           "是否显示图片框",IDC_STATIC_SET,17,262,114,8
+    COMBOBOX        IDC_COMBO_SET,129,261,37,44,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "",IDC_LIST1,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,7,303,246
+    PUSHBUTTON      "ENABLE_ITEM",IDC_BUTTON_ENABLE_ITEM,15,279,50,14
+    PUSHBUTTON      "DISABLE_ITEM",IDC_BUTTON_DISABLE_ITEM,73,279,50,14
+    PUSHBUTTON      "EDIT_US",IDC_BUTTON_EDIT_US,129,279,50,14
+    PUSHBUTTON      "SAVE_US",IDC_BUTTON_SAVE_US,187,279,50,14
+    LTEXT           "静态",IDC_STATIC_FRAME_COLOER,208,262,102,8,NOT WS_VISIBLE
+END
+
+IDD_DIALOG_EDIT DIALOGEX 0, 0, 309, 297
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,234,262,50,14
+    LTEXT           "type",IDC_STATIC_CELL_TYPE,26,19,72,8
+    EDITTEXT        IDC_EDIT_CELL_TYPE,110,15,126,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "name",IDC_STATIC_CELL_NAME,26,36,75,8
+    EDITTEXT        IDC_EDIT_CELL_NAME,110,33,126,14,ES_AUTOHSCROLL
+    LTEXT           "coloer",IDC_STATIC_COLOER,30,75,18,8,NOT WS_VISIBLE
+    LTEXT           "静态",IDC_STATIC_UNIT,26,93,39,8,NOT WS_VISIBLE
+    COMBOBOX        IDC_COMBO_UNIT,80,91,48,63,CBS_DROPDOWN | CBS_SORT | NOT WS_VISIBLE | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "静态",IDC_STATIC_COEF,136,94,38,8,NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT_COEF,177,92,40,14,ES_AUTOHSCROLL | ES_NUMBER | NOT WS_VISIBLE
+    LTEXT           "静态",IDC_STATIC_HPF_TIP,224,94,69,8,NOT WS_VISIBLE
+    GROUPBOX        "静态",IDC_STATIC_GROUP1,21,102,272,71
+    LTEXT           "静态",IDC_STATIC_MAN_NOR,37,123,46,8
+    EDITTEXT        IDC_EDIT_MAN_NOR_MIN,93,120,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "——",IDC_STATIC,139,123,14,8
+    EDITTEXT        IDC_EDIT_MAN_NOR_MAX,158,120,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "静态",IDC_STATIC_WMAN_NOR,37,149,46,8
+    EDITTEXT        IDC_EDIT_WMAN_NOR_MIN,93,147,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "——",IDC_STATIC,139,149,14,8
+    EDITTEXT        IDC_EDIT_WMAN_NOR_MAX,158,147,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    PUSHBUTTON      "Button1",IDC_BUTTON_PREV,30,262,50,14
+    PUSHBUTTON      "Button2",IDC_BUTTON_NEXT,94,262,50,14
+    PUSHBUTTON      "save",IDC_BUTTON_SAVE,160,262,50,14
+    GROUPBOX        "静态",IDC_STATIC_GROUP2,19,182,274,72
+    LTEXT           "静态",IDC_STATIC_MAN_EXC,37,202,46,8
+    EDITTEXT        IDC_EDIT_MAN_EXC_MIN,93,199,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "——",IDC_STATIC,139,202,14,8
+    EDITTEXT        IDC_EDIT_MAN_EXC_MAX,158,199,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "静态",IDC_STATIC_WMAN_EXP,37,231,46,8
+    EDITTEXT        IDC_EDIT_WMAN_EXC_MIN,93,228,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "——",IDC_STATIC,139,231,14,8
+    EDITTEXT        IDC_EDIT_WMAN_EXC_MAX,158,228,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "静态",IDC_STATIC_WARN,213,200,74,45
+    PUSHBUTTON      "Button1",IDC_BUTTON_SET_COLOER,109,69,126,14
+    LTEXT           "reliablity",IDC_STATIC_RElIABLiLITY,26,55,75,8
+    EDITTEXT        IDC_EDIT_RElIABLiLITY,110,52,63,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "(0 - 100，0表示不限制)",IDC_STATIC,176,56,81,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_DIALOG_SetConfig, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 310
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 302
+    END
+
+    IDD_DIALOG_EDIT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 302
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 290
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // 中文(简体，中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\CSetConfig.rc2"  // 非 Microsoft Visual C++ 编辑的资源
+#include "l.CHS\afxres.rc"      // 标准组件
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

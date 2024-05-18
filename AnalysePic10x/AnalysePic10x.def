@@ -1,0 +1,13 @@
+LIBRARY "AnalysePic10x"
+
+
+EXPORTS
+
+AnalysePic10x_Create @1
+AnalysePic10x_Entry  @2
+AnalysePic10x_Finish @3
+AnalysePic10x_GetSample40xGrapCounter @4
+AnalysePic10x_GetSample40xGrapInfo @5
+AnalysePic10x_Destory @6 
+AnalysePic10x_RecCellNumber @7
+AnalysePic10x_GetSample40xTotaleGrapCounter @8
