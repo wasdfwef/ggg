@@ -1,0 +1,10 @@
+; UWReportAPI.def : 声明 DLL 的模块参数。
+
+LIBRARY      "UWReportAPI"
+
+EXPORTS
+    ; 此处可以是显式导出
+UWReport_Print        @1
+UWReport_PrintView    @2
+UWReport_GroupPrint   @3
+UWReport_LGReportPre  @4

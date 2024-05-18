@@ -1,0 +1,5 @@
+EXPORTS
+
+	ModuleEntry @1
+	AddProgramObjectDispatch  @2
+	

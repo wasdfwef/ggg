@@ -1,0 +1,54 @@
+; UW2000DB.def : 声明 DLL 的模块参数。
+
+LIBRARY      "UW2000DB"
+
+EXPORTS
+    ; 此处可以是显式导出
+Access_OpenAccess        @1
+Access_CloseAccess       @2
+Access_NewTask           @3
+Access_UpdateTaskStatus  @4
+
+Access_ResetTask         @5
+
+Access_DelTask           @6
+Access_GetTodayTaskInfo  @7
+Access_GetTaskInfo       @8
+Access_UpdateTaskInfo    @9
+Access_QueryReportStatus @10
+Access_SetReportStatus   @11
+
+Access_QueryRecordConfig @12
+Access_SetRecordConfig   @13
+Access_SetGrapPath       @14
+
+Access_SetPrintPath  @15
+Access_GetPrintPath  @16
+Access_SearchRecord  @17
+Access_GetUserList   @18
+Access_UserAdd       @19
+Access_DelUser       @20
+Access_ModifyPwd     @21
+Access_UserLogin     @22
+
+Access_GetLisInfo        @23
+Access_CheckTaskStates   @24
+Access_GetQcTaskInfo     @25
+Access_ModifyUserInfo    @26
+Access_GetDeptAndPosInfo @27
+
+Access_FreeGetUserListBuf       @28
+Access_FreeGetDeptAndPosInfoBuf @29
+Access_FreeGetTodayTaskInfoBuf  @30
+Access_FreeSearchRecordBuf      @31
+Access_FreeGetQcTaskInfoBuf     @32
+
+Access_GetAllTaskInfo           @33
+Access_FreeGetAllTaskInfoBuf    @34
+
+Access_FreeBuf                  @35 
+
+Access_SetTaskBarcode  @36
+Access_GetTaskBarcode  @37
+
+Access_GetLastTaskId  @38
