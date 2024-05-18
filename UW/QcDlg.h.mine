@@ -1,0 +1,75 @@
+﻿#pragma once
+#include "afxwin.h"
+#include "PngButton.h"
+#include "afxcmn.h"
+#include "UdcQcDlg.h"
+#include "UsQcDlg.h"
+#include "InsertQcTask.h"
+
+//在质控记录的数据库中，诊断结果表示批号，建议表示有效期
+#define WM_USER_ADDTASKTOQC WM_USER+505
+// CQcDlg 对话框
+
+class CQcDlg : public CDialog
+{
+	DECLARE_DYNAMIC(CQcDlg)
+
+public:
+	CQcDlg(CWnd* pParent = NULL);   // 标准构造函数
+	virtual ~CQcDlg();
+
+// 对话框数据
+	enum { IDD = IDD_QC_DIALOG };
+
+protected:
+	virtual void DoDataExchange(CDataExchange* pDX);    // DDX/DDV 支持
+
+	DECLARE_MESSAGE_MAP()
+public:
+	afx_msg void OnBnClickedCancel();
+	virtual BOOL OnInitDialog();
+	CButton m_btnUdcQc1;
+	CButton m_btnUdcQc2;
+	CButton m_btnUdcQc3;
+	CButton m_btnUsQc1;
+	CButton m_btnUsQc2;
+	int nFlag;
+	afx_msg void OnBnClickedQC();
+	void ChangeCheckStatus(CButton&, bool isCloseQC = FALSE);
+	void AddTaskToQcList(CListCtrl &m_list, PTASK_INFO pInfo, int nItem);
+	void AddTaskToQcListInit(CListCtrl &m_list, int nID, PTASK_INFO info);
+	void UpDateTaskToQcUdcList(PTASK_INFO tInfo);
+	void UpDateTaskToQcUsList(PTASK_INFO tInfo);
+	void Init();
+	void DeleTodayReportLast(PTASK_INFO pInfo);
+private:
+
+	TestDes m_TestType;
+	bool isInit;
+public:
+	BOOL QCopend;
+	int m_TestTypeOpendQC;
+	BOOL m_udcI;
+	BOOL m_udcII;
+	BOOL m_udcIII;
+	BOOL m_usI;
+	BOOL m_usII;
+	afx_msg HBRUSH OnCtlColor(CDC* pDC, CWnd* pWnd, UINT nCtlColor);
+	CButton m_cancel;
+	afx_msg void OnBnClickedButton1();
+	CPngButton* m_enableButton;
+	CPngButton* m_disableButton;
+	CTabCtrl m_tab;
+	UdcQcDlg m_udcDlg;
+	UsQcDlg m_usDlg;
+	afx_msg void OnSize(UINT nType, int cx, int cy);
+	afx_msg void OnTcnSelchangeTab1(NMHDR *pNMHDR, LRESULT *pResult);
+	afx_msg void OnBnClickedButtonNew();
+	afx_msg LRESULT AddTasktoQC(WPARAM wParam, LPARAM lParam);
+	int m_editSn;
+	virtual void PostNcDestroy();
+	virtual void OnCancel();
+	void ShowTaskStatus(int nID,bool isUDC = true);
+	int GetIndexByTaskID(CListCtrl & m_list, int nID);
+	void FillList(void);
+};

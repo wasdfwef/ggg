@@ -1,0 +1,60 @@
+﻿#pragma once
+#include "afxwin.h"
+#include "PngButton.h"
+#include "afxcmn.h"
+#include "UdcQcDlg.h"
+#include "UsQcDlg.h"
+
+
+// CQcDlg 对话框
+
+class CQcDlg : public CDialog
+{
+	DECLARE_DYNAMIC(CQcDlg)
+
+public:
+	CQcDlg(CWnd* pParent = NULL);   // 标准构造函数
+	virtual ~CQcDlg();
+
+// 对话框数据
+	enum { IDD = IDD_QC_DIALOG };
+
+protected:
+	virtual void DoDataExchange(CDataExchange* pDX);    // DDX/DDV 支持
+
+	DECLARE_MESSAGE_MAP()
+public:
+	afx_msg void OnBnClickedCancel();
+	virtual BOOL OnInitDialog();
+	CButton m_btnUdcQc1;
+	CButton m_btnUdcQc2;
+	CButton m_btnUdcQc3;
+	CButton m_btnUsQc1;
+	CButton m_btnUsQc2;
+	int nFlag;
+	afx_msg void OnBnClickedUdcqc();
+	afx_msg void OnBnClickedQC();
+	afx_msg void OnBnClickedUdcqc3();
+	afx_msg void OnBnClickedUsqc2();
+	afx_msg void OnBnClickedUdcqc2();
+	void ChangeCheckStatus(CButton&, bool isCloseQC = FALSE);
+	void Init();
+private:
+
+	TestDes m_TestType;
+	bool isInit;
+public:
+	BOOL QCopend;
+	int m_TestTypeOpendQC;
+	BOOL m_udcI;
+	BOOL m_udcII;
+	BOOL m_udcIII;
+	BOOL m_usI;
+	BOOL m_usII;
+	afx_msg HBRUSH OnCtlColor(CDC* pDC, CWnd* pWnd, UINT nCtlColor);
+	CButton m_cancel;
+	afx_msg void OnBnClickedCancel2();
+	afx_msg void OnBnClickedButton1();
+	CPngButton* m_enableButton;
+	CPngButton* m_disableButton;
+};

@@ -1,0 +1,705 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{ff6d8036-f5f7-4ea7-a2da-f540fe3779a1}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{8fdce6d4-b411-432c-a571-13e3b5d465a4}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{0cb81baf-7409-4ea2-a267-8be166c9de7d}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="websocket">
+      <UniqueIdentifier>{dd8e3878-d97e-488d-8707-936f08df3e0e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="websocket\proto">
+      <UniqueIdentifier>{f8c7f925-a980-4ff1-a25f-a944e9bdd718}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AdjustImg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="AutoFocusDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="AutoFocusMgr.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ChoiceQcPri.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CLiushuixianOpt.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CriticalSection.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DbgAction.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DbgCharacterBarcode.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DbgHardwareparam.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DbgMicroSecope.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DbgMotorSolenoid.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DbgMsg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DbgPassword.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DbgSensor.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DbgUdc.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DebugSheet.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DogInfo.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DRBCImage.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DRBCImageView.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="FindRecord.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ForceCanvas.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="InsertQcTask.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ListCtrlSkinDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ListGroupView.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ListHelper.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="LockListCtrl.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="LogFile.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MainFrm.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ManageDevDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MotorConfPage.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MoveVisioDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MyListCtrl.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MyMenu.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MytoolTipCtrl.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MyWaitCursor.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="OutputWnd.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="PaintView.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="PicImageArgvDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="pipeline_manager.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="pipeline_protocol.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="PngButton.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ProcessManager.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="PropertiesWndPat.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="PropertiesWndRet.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="QcDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="RecordList.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="RecTask.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="RecThread.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SearchRecordDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SelfCheckdlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SetDialog.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Setting.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SoftwareSetUI.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Common\String.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Spline.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="StdUdcTest.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="TaskMgr.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="TaskStatus.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="TestType.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="THMessageDispatcher.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ThreadX.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="THUIInterface.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="TodayList.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ToolsView.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="UdcCriterionDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="UdcQcDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="UdcView.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="UserDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="UserInfoDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="UserManageDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="UserPasswordDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="UsQcDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="UW.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="UWDebugDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="UWDoc.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="UWParaDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="UWView.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="WndBtnTools.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SetTestTypeDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="websocket\websoket-client.cpp">
+      <Filter>websocket</Filter>
+    </ClCompile>
+    <ClCompile Include="websocket\websoket-interface.cpp">
+      <Filter>websocket</Filter>
+    </ClCompile>
+    <ClCompile Include="websocket\websoket-server.cpp">
+      <Filter>websocket</Filter>
+    </ClCompile>
+    <ClCompile Include="websocket\proto\flowline.pb.cc">
+      <Filter>websocket\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="PhysicsCalibrateDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\inc\utils\ByteUtil.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="AdjustImg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="AutoFocusDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="AutoFocusMgr.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ChoiceQcPri.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CLiushuixianOpt.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ComValue.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CriticalSection.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DbgAction.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DbgCharacterBarcode.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DbgHardwareparam.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DbgMicroSecope.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DbgMotorSolenoid.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DbgPassword.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DbgSensor.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DbgUdc.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DebugSheet.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DogInfo.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DRBCImage.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DRBCImageView.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="FindRecord.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ForceCanvas.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Common\String.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\CConfigSet.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\CmdHelper.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\CommDef.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\CPrintView.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\CStartCalibrate.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\CStartComSet.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\THDBUW_Access.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\THInterface.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\THUIInterface.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\THUIStruct.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\UWReportAPI.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="InsertQcTask.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ListCtrlSkinDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ListGroupView.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="LockListCtrl.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="LogFile.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MainFrm.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ManageDevDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MotorConfPage.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MoveVisioDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MyListCtrl.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MyMenu.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MytoolTipCtrl.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MyWaitCursor.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="OutputWnd.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="PaintView.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="PicImageArgvDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="pipeline_manager.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="pipeline_protocol.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="PngButton.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ProcessManager.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="PropertiesWndPat.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="PropertiesWndRet.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="QcDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="RecordList.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SearchRecordDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SelfCheckdlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SetDialog.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Setting.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SoftwareSetUI.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Spline.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="StdUdcTest.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="TaskStatus.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="TestType.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="THMessageDispatcher.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ThreadX.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="thumbnail.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="TodayList.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ToolsView.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="UdcCriterionDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="UdcQcDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="UdcView.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="UserDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="UserInfoDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="UserManageDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="UserPasswordDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="UsQcDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="UW.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="UWDebugDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="UWDoc.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="UWParaDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="UWView.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="WndBtnTools.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SetTestTypeDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="websocket\websoket-client.h">
+      <Filter>websocket</Filter>
+    </ClInclude>
+    <ClInclude Include="websocket\websoket-interface.h">
+      <Filter>websocket</Filter>
+    </ClInclude>
+    <ClInclude Include="websocket\websoket-server.h">
+      <Filter>websocket</Filter>
+    </ClInclude>
+    <ClInclude Include="websocket\proto\flowline.pb.h">
+      <Filter>websocket\proto</Filter>
+    </ClInclude>
+    <ClInclude Include="PhysicsCalibrateDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="UW.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\bitmap1.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\bitmap3.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\close.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\color.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\display.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\hospital.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\icon1.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\know.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\konw.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\konw.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\listskin.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\Login.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\more.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\more.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\more.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\more2.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\png1.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\png2.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\png3.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\png4.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\qcEX.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\qcEX_2.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\qc_main.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\search.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\serialport.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\set.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\temp.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\Toolbar.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\Toolbar256.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\usermgr.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\UW.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\UWDoc.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="UserImages.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\bitbug_favicon.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\idr_main.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\clean.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\strongclean.png">
+      <Filter>资源文件</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\ribbon1.mfcribbon-ms">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\UW.rc2">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="websocket\proto\flowline.proto">
+      <Filter>websocket\proto</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+</Project>

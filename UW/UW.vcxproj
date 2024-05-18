@@ -1,0 +1,394 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{1FA8344D-D70A-4A34-8F6A-F31CA5EA3372}</ProjectGuid>
+    <RootNamespace>UW</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+    <ProjectName>UW</ProjectName>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\CommPropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\CommPropertySheet.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>12.0.30501.0</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <TargetName>UW2000</TargetName>
+    <GenerateManifest>true</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <GenerateManifest>true</GenerateManifest>
+    <TargetName>UW2000</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_LC_V=2260;PROTOBUF_USE_DLLS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <AdditionalIncludeDirectories>$(SolutionDir)\inc;$(SolutionDir)\inc\libwebsocket;$(SolutionDir)\inc\protobuf</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0804</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <IgnoreSpecificDefaultLibraries>
+      </IgnoreSpecificDefaultLibraries>
+      <AdditionalLibraryDirectories>$(SolutionDir)\lib;C:\Program Files (x86)\Microsoft SDKs\Speech\v11.0\Lib</AdditionalLibraryDirectories>
+      <LargeAddressAware>true</LargeAddressAware>
+      <StackReserveSize>0x900000</StackReserveSize>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy "$(TargetPath)" "$(SolutionDir)\bin\$(Configuration)\" /yf 
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_LC_V=2250;PROTOBUF_USE_DLLS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <AdditionalIncludeDirectories>$(SolutionDir)\inc;$(SolutionDir)\inc\libwebsocket;$(SolutionDir)\inc\protobuf</AdditionalIncludeDirectories>
+      <ExceptionHandling>Async</ExceptionHandling>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0804</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalLibraryDirectories>$(SolutionDir)\lib;C:\Program Files (x86)\Microsoft SDKs\Speech\v11.0\Lib</AdditionalLibraryDirectories>
+      <LargeAddressAware>true</LargeAddressAware>
+      <StackReserveSize>0x900000</StackReserveSize>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy "$(TargetPath)" "$(SolutionDir)\bin\$(Configuration)\" /yf </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="AdjustImg.cpp" />
+    <ClCompile Include="AutoFocusDlg.cpp" />
+    <ClCompile Include="AutoFocusMgr.cpp" />
+    <ClCompile Include="Camera.cpp" />
+    <ClCompile Include="ChoiceQcPri.cpp" />
+    <ClCompile Include="CLiushuixianOpt.cpp" />
+    <ClCompile Include="CriticalSection.cpp" />
+    <ClCompile Include="DbgAction.cpp" />
+    <ClCompile Include="DbgCharacterBarcode.cpp" />
+    <ClCompile Include="DbgHardwareparam.cpp" />
+    <ClCompile Include="DbgMicroSecope.cpp" />
+    <ClCompile Include="DbgMotorSolenoid.cpp" />
+    <ClCompile Include="DbgMsg.cpp" />
+    <ClCompile Include="DbgPassword.cpp" />
+    <ClCompile Include="DbgSensor.cpp" />
+    <ClCompile Include="DbgUdc.cpp" />
+    <ClCompile Include="DebugSheet.cpp" />
+    <ClCompile Include="DogInfo.cpp" />
+    <ClCompile Include="DRBCImage.cpp" />
+    <ClCompile Include="DRBCImageView.cpp" />
+    <ClCompile Include="FindRecord.cpp" />
+    <ClCompile Include="ForceCanvas.cpp" />
+    <ClCompile Include="InsertQcTask.cpp" />
+    <ClCompile Include="ListCtrlSkinDlg.cpp" />
+    <ClCompile Include="ListGroupView.cpp" />
+    <ClCompile Include="ListHelper.cpp" />
+    <ClCompile Include="LockListCtrl.cpp" />
+    <ClCompile Include="LogFile.cpp" />
+    <ClCompile Include="MainFrm.cpp" />
+    <ClCompile Include="ManageDevDlg.cpp" />
+    <ClCompile Include="MotorConfPage.cpp" />
+    <ClCompile Include="MoveVisioDlg.cpp" />
+    <ClCompile Include="MyListCtrl.cpp" />
+    <ClCompile Include="MyMenu.cpp" />
+    <ClCompile Include="MytoolTipCtrl.cpp" />
+    <ClCompile Include="MyWaitCursor.cpp" />
+    <ClCompile Include="OutputWnd.cpp" />
+    <ClCompile Include="PaintView.cpp" />
+    <ClCompile Include="PhysicsCalibrateDlg.cpp" />
+    <ClCompile Include="PicImageArgvDlg.cpp" />
+    <ClCompile Include="pipeline_manager.cpp" />
+    <ClCompile Include="pipeline_protocol.cpp" />
+    <ClCompile Include="PngButton.cpp" />
+    <ClCompile Include="ProcessManager.cpp" />
+    <ClCompile Include="PropertiesWndPat.cpp" />
+    <ClCompile Include="PropertiesWndRet.cpp" />
+    <ClCompile Include="QcDlg.cpp" />
+    <ClCompile Include="RecordList.cpp" />
+    <ClCompile Include="RecTask.cpp" />
+    <ClCompile Include="RecThread.cpp" />
+    <ClCompile Include="SearchRecordDlg.cpp" />
+    <ClCompile Include="SelfCheckdlg.cpp" />
+    <ClCompile Include="SetDialog.cpp" />
+    <ClCompile Include="SetTestTypeDlg.cpp" />
+    <ClCompile Include="Setting.cpp" />
+    <ClCompile Include="SoftwareSetUI.cpp" />
+    <ClCompile Include="Source\Common\String.cpp" />
+    <ClCompile Include="Spline.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="StdUdcTest.cpp" />
+    <ClCompile Include="TaskMgr.cpp" />
+    <ClCompile Include="TaskStatus.cpp" />
+    <ClCompile Include="TestType.cpp" />
+    <ClCompile Include="THMessageDispatcher.cpp" />
+    <ClCompile Include="ThreadX.cpp" />
+    <ClCompile Include="THUIInterface.cpp" />
+    <ClCompile Include="TodayList.cpp" />
+    <ClCompile Include="ToolsView.cpp" />
+    <ClCompile Include="UdcCriterionDlg.cpp" />
+    <ClCompile Include="UdcQcDlg.cpp" />
+    <ClCompile Include="UdcView.cpp" />
+    <ClCompile Include="UserDlg.cpp" />
+    <ClCompile Include="UserInfoDlg.cpp" />
+    <ClCompile Include="UserManageDlg.cpp" />
+    <ClCompile Include="UserPasswordDlg.cpp" />
+    <ClCompile Include="UsQcDlg.cpp" />
+    <ClCompile Include="UW.cpp" />
+    <ClCompile Include="UWDebugDlg.cpp" />
+    <ClCompile Include="UWDoc.cpp" />
+    <ClCompile Include="UWParaDlg.cpp" />
+    <ClCompile Include="UWView.cpp" />
+    <ClCompile Include="websocket\proto\flowline.pb.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="websocket\websoket-client.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="websocket\websoket-interface.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="websocket\websoket-server.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="WndBtnTools.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\inc\utils\ByteUtil.h" />
+    <ClInclude Include="AdjustImg.h" />
+    <ClInclude Include="AutoFocusDlg.h" />
+    <ClInclude Include="AutoFocusMgr.h" />
+    <ClInclude Include="Camera.h" />
+    <ClInclude Include="ChoiceQcPri.h" />
+    <ClInclude Include="CLiushuixianOpt.h" />
+    <ClInclude Include="ComValue.h" />
+    <ClInclude Include="CriticalSection.h" />
+    <ClInclude Include="DbgAction.h" />
+    <ClInclude Include="DbgCharacterBarcode.h" />
+    <ClInclude Include="DbgHardwareparam.h" />
+    <ClInclude Include="DbgMicroSecope.h" />
+    <ClInclude Include="DbgMotorSolenoid.h" />
+    <ClInclude Include="DbgPassword.h" />
+    <ClInclude Include="DbgSensor.h" />
+    <ClInclude Include="DbgUdc.h" />
+    <ClInclude Include="DebugSheet.h" />
+    <ClInclude Include="DogInfo.h" />
+    <ClInclude Include="DRBCImage.h" />
+    <ClInclude Include="DRBCImageView.h" />
+    <ClInclude Include="FindRecord.h" />
+    <ClInclude Include="ForceCanvas.h" />
+    <ClInclude Include="Include\Common\String.h" />
+    <ClInclude Include="inc\CConfigSet.h" />
+    <ClInclude Include="inc\CmdHelper.h" />
+    <ClInclude Include="inc\CommDef.h" />
+    <ClInclude Include="inc\CPrintView.h" />
+    <ClInclude Include="inc\CStartCalibrate.h" />
+    <ClInclude Include="inc\CStartComSet.h" />
+    <ClInclude Include="inc\THDBUW_Access.h" />
+    <ClInclude Include="inc\THInterface.h" />
+    <ClInclude Include="inc\THUIInterface.h" />
+    <ClInclude Include="inc\THUIStruct.h" />
+    <ClInclude Include="inc\UWReportAPI.h" />
+    <ClInclude Include="InsertQcTask.h" />
+    <ClInclude Include="ListCtrlSkinDlg.h" />
+    <ClInclude Include="ListGroupView.h" />
+    <ClInclude Include="LockListCtrl.h" />
+    <ClInclude Include="LogFile.h" />
+    <ClInclude Include="MainFrm.h" />
+    <ClInclude Include="ManageDevDlg.h" />
+    <ClInclude Include="MotorConfPage.h" />
+    <ClInclude Include="MoveVisioDlg.h" />
+    <ClInclude Include="MyListCtrl.h" />
+    <ClInclude Include="MyMenu.h" />
+    <ClInclude Include="MytoolTipCtrl.h" />
+    <ClInclude Include="MyWaitCursor.h" />
+    <ClInclude Include="OutputWnd.h" />
+    <ClInclude Include="PaintView.h" />
+    <ClInclude Include="PhysicsCalibrateDlg.h" />
+    <ClInclude Include="PicImageArgvDlg.h" />
+    <ClInclude Include="pipeline_manager.h" />
+    <ClInclude Include="pipeline_protocol.h" />
+    <ClInclude Include="PngButton.h" />
+    <ClInclude Include="ProcessManager.h" />
+    <ClInclude Include="PropertiesWndPat.h" />
+    <ClInclude Include="PropertiesWndRet.h" />
+    <ClInclude Include="QcDlg.h" />
+    <ClInclude Include="RecordList.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="SearchRecordDlg.h" />
+    <ClInclude Include="SelfCheckdlg.h" />
+    <ClInclude Include="SetDialog.h" />
+    <ClInclude Include="SetTestTypeDlg.h" />
+    <ClInclude Include="Setting.h" />
+    <ClInclude Include="SoftwareSetUI.h" />
+    <ClInclude Include="Spline.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="StdUdcTest.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="TaskStatus.h" />
+    <ClInclude Include="TestType.h" />
+    <ClInclude Include="THMessageDispatcher.h" />
+    <ClInclude Include="ThreadX.h" />
+    <ClInclude Include="thumbnail.h" />
+    <ClInclude Include="TodayList.h" />
+    <ClInclude Include="ToolsView.h" />
+    <ClInclude Include="UdcCriterionDlg.h" />
+    <ClInclude Include="UdcQcDlg.h" />
+    <ClInclude Include="UdcView.h" />
+    <ClInclude Include="UserDlg.h" />
+    <ClInclude Include="UserInfoDlg.h" />
+    <ClInclude Include="UserManageDlg.h" />
+    <ClInclude Include="UserPasswordDlg.h" />
+    <ClInclude Include="UsQcDlg.h" />
+    <ClInclude Include="UW.h" />
+    <ClInclude Include="UWDebugDlg.h" />
+    <ClInclude Include="UWDoc.h" />
+    <ClInclude Include="UWParaDlg.h" />
+    <ClInclude Include="UWView.h" />
+    <ClInclude Include="websocket\proto\flowline.pb.h" />
+    <ClInclude Include="websocket\websoket-client.h" />
+    <ClInclude Include="websocket\websoket-interface.h" />
+    <ClInclude Include="websocket\websoket-server.h" />
+    <ClInclude Include="WndBtnTools.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\bitbug_favicon.ico" />
+    <Image Include="res\bitmap1.bmp" />
+    <Image Include="res\bitmap3.bmp" />
+    <Image Include="res\clean.png" />
+    <Image Include="res\close.bmp" />
+    <Image Include="res\color.png" />
+    <Image Include="res\display.png" />
+    <Image Include="res\hospital.png" />
+    <Image Include="res\icon1.ico" />
+    <Image Include="res\idr_main.ico" />
+    <Image Include="res\know.png" />
+    <Image Include="res\konw.bmp" />
+    <Image Include="res\konw.png" />
+    <Image Include="res\listskin.png" />
+    <Image Include="res\Login.bmp" />
+    <Image Include="res\more.bmp" />
+    <Image Include="res\more.ico" />
+    <Image Include="res\more.png" />
+    <Image Include="res\more2.ico" />
+    <Image Include="res\png1.png" />
+    <Image Include="res\png2.png" />
+    <Image Include="res\png3.png" />
+    <Image Include="res\png4.png" />
+    <Image Include="res\qcEX.png" />
+    <Image Include="res\qcEX_2.png" />
+    <Image Include="res\qc_main.png" />
+    <Image Include="res\search.png" />
+    <Image Include="res\serialport.png" />
+    <Image Include="res\set.png" />
+    <Image Include="res\strongclean.png" />
+    <Image Include="res\temp.png" />
+    <Image Include="res\Toolbar.bmp" />
+    <Image Include="res\Toolbar256.bmp" />
+    <Image Include="res\usermgr.png" />
+    <Image Include="res\UW.ico" />
+    <Image Include="res\UWDoc.ico" />
+    <Image Include="UserImages.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="UW.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\ribbon1.mfcribbon-ms" />
+    <None Include="res\UW.rc2" />
+    <None Include="websocket\proto\flowline.proto" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="UW.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
