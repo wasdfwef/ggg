@@ -1,0 +1,27 @@
+LIBRARY "THInterface"
+
+
+EXPORTS
+
+THInterface_AddRecCellInfo      @1
+THInterface_AutoDetectLCConfig  @2
+THInterface_CaptureCameraGrap   @3
+THInterface_CloseDev            @4
+THInterface_DeleteRecCellInfo   @5
+THInterface_FreeSysBuffer       @6
+THInterface_GetSystemInformation @7
+THInterface_Initialize          @8
+THInterface_ModifyRecCellInfo   @9
+THInterface_QuerySystemDev      @10
+THInterface_QueryRecGrapInfo    @11
+THInterface_QueryRecCellInfo    @12
+THInterface_QueryDevCaps @13
+THInterface_QuerySystemWorkStatus @14
+THInterface_StartDev            @15
+THInterface_StartDevForDebug    @16
+THInterface_SetSystemWorkStatus @17
+THInterface_SetCameraPrviewWindow @18
+THInterface_SetUserLevelInforamtion @19
+THInterface_SendlCCmdActionEx @20
+THInterface_SetSystemWorkStatusEx @21
+THInterface_SetDevCaps @22
