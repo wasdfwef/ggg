@@ -1,0 +1,13 @@
+2019.6.6
+修改USArc.cpp
+增加40倍位置聚焦
+config文件夹focus.ini
+步距 step
+总长度 end
+
+程序目录中
+conf.ini
+focus项目
+聚焦层数 FocusCount 这个要等于 end除以step
+
+改dll适用与滚筒版UW2000

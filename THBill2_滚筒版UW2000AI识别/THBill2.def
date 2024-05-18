@@ -1,0 +1,7 @@
+LIBRARY "THBill2"
+
+
+EXPORTS
+
+ModuleEntry @1
+AddProgramObjectDispatch  @2
